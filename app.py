@@ -1,3 +1,4 @@
+from os import environ as env
 from bottle import route
 from bottle import run
 from bottle import template
@@ -9,4 +10,4 @@ def home():
 
 
 if __name__ == '__main__':
-    run(server='gunicorn', host='0.0.0.0', port=5000)
+    run(server='gunicorn', host='0.0.0.0', port=int(env.get("PORT", 5000)))
