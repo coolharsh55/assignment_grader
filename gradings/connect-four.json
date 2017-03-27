@@ -1,0 +1,42 @@
+{
+    "assignment_title": "Connect Four",
+    "assignment_marks": 100,
+    "sections": [
+        {
+            "title": "Connect4Game Class",
+            "marks": 35,
+            "gradings": [
+            ]
+        },
+        {
+            "title": "Connect4Grid interface",
+            "marks": 10,
+            "gradings": [
+            ]
+        },
+        {
+            "title": "Connect4Grid2DArray",
+            "marks": 25,
+            "gradings": [
+            ]
+        },
+        {
+            "title": "ConnectPlayer Abstract Class",
+            "marks": 10,
+            "gradings": [
+            ]
+        },
+        {
+            "title": "C4HumanPlayer Class",
+            "marks": 10,
+            "gradings": [
+            ]
+        },
+        {
+            "title": "C4RandomAIPlayer",
+            "marks": 10,
+            "gradings": [
+            ]
+        }
+    ]
+}

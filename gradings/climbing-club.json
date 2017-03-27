@@ -1,0 +1,460 @@
+{
+    "assignment_title": "Harness",
+    "assignment_marks": 100,
+    "sections": [
+        {
+            "title": "Harness Class: Member variables",
+            "marks": 8,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "member variables",
+                    "positive_comment": "Correctly declares member variables",
+                    "partial_comment": "correctly declares only some member variables",
+                    "collection": [
+                        ["make is not of type string"],
+                        ["model is not of type string/int"],
+                        ["number of times used is not of type int"],
+                        ["instructor name is not of type string"],
+                        ["loan status is not of type boolean"],
+                        ["club member is not of type string"]
+                    ]
+                },
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "member access control",
+                    "positive_comment": "declares members as private",
+                    "partial_comment": "declares only some members as private",
+                    "collection": [
+                        ["make is not declared as private"],
+                        ["model is not declared as private"],
+                        ["number of times is not declared as private"],
+                        ["instructor name is not declared as private"],
+                        ["loan status is not declared as private"],
+                        ["club member is not declared as private"]
+                    ]
+                },
+                {
+                	"type": "negative-collective",
+                	"marks": 0.5,
+                	"description": "members declared final",
+                	"positive_comment": "make and model declared as final",
+                	"partial_comment": "some members correctly declared as final",
+                	"collection": [
+                		["make not declared final"],
+                		["model not declared final"]
+                	]
+                },
+                {
+                	"type": "negative",
+                	"description": "constant declaring max number of uses",
+                	"collection": [
+                        [1, "does not have constant declaring max number of uses for a harness", "has constant declaring max number of uses for a harness"]
+                    ]
+                }
+            ]
+        },
+        {
+        	"title": "Harness Class: constructor 1",
+        	"marks": 3,
+        	"gradings": [
+        		{
+        			"type": "negative-collective",
+        			"marks": 0.5,
+        			"description": "initialise member variables from input",
+        			"positive_comment": "initialises member variables from input",
+        			"partial_comment": "initialises some member variables with correct values",
+        			"collection": [
+        				["make is not initialised from input"],
+                        ["model is not initialised from input"],
+                        ["number of times is not initialised from input"],
+                        ["instructor name is not initialised from input"],
+                        ["loan status is not initialised from input"],
+                        ["club member is not initialised from input"]
+        			]
+        		}
+        	]
+        },
+        {
+        	"title": "Harness Class: constructor 2",
+        	"marks": 3,
+        	"gradings": [
+        		{
+        			"type": "negative-collective",
+        			"marks": 0.5,
+        			"description": "initialise some with others set to default",
+        			"positive_comment": "correctly initialises some variables with others set to resonable defaults",
+        			"partial_comment": " initialises some members with correct values",
+        			"collection": [
+        				["make is not initialised to given value"],
+                        ["model is not initialised to given value"],
+                        ["instructor name is not initialised to given value"],
+                        ["number of times is not initialised to reasonable default"],
+                        ["loan status is not initialised to reasonable default"],
+                        ["club member is not initialised to reasonable default"]
+        			]
+        		}
+        	]
+        },
+        {
+        	"title": "Harness Class: checkHarness",
+        	"marks": 5,
+        	"gradings": [
+        		{
+        			"type": "negative-collective",
+        			"marks": 0.5,
+        			"description": "function definition",
+        			"positive_comment": "takes instruction name as parameter and return type is void",
+        			"partial_comment": "function definition is only partially correct",
+        			"collection": [
+        				["instructor name not taken as parameter"],
+        				["return type should be void"]
+        			]
+        		},
+        		{
+        			"type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "does not check if harness is not on loan", "checks if harness is on loan"],
+                        [1, "does not check if parameter is not null", "checks if parameter is not null"],
+                        [1, "does not set instructor member to given parameter", "sets instructor member to given parameter"],
+                        [1, "does not reset the number of times the harness was used", "resets the number of times the harness was used"]
+                    ]
+        		}
+        	]
+        },
+        {
+            "title": "Harness Class: isHarnessOnLoad",
+            "marks": 2,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "function definition",
+                    "collection": [
+                        [0.5, "method should have no parameters", "method has no parameters"],
+                        [0.5, "method should have boolean return type", "method has boolean return type"],
+                        [1, "does not return value of loan status", "returns loan status"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Harness Class: canHarnessBeLoaned",
+            "marks": 4,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "function definition",
+                    "positive_comment": "has correct function definition",
+                    "partial_comment": "has partially correct function definition",
+                    "collection": [
+                        ["method should not have any parameters"],
+                        ["method should have boolean return type"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "method should return true if harness was not on loan", "method returns true if harness was on loan"],
+                        [1, "should check if number of times it was used is less than maximum allowed value", "checks if number of times used is within maximum limit"],
+                        [1, "return value should be based on number of times used", "return value is based on number of times used"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Harness Class: loanHarness",
+            "marks": 6,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "function definition",
+                    "positive_comment": "has correct function definition",
+                    "partial_comment": "has partially correct function definition",
+                    "collection": [
+                        ["method should have member name as parameter"],
+                        ["method should have void as return type"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "does not check if harness can be loaned using method", "checks if harness can be loaned using method"],
+                        [1, "does not check if parameter is null", "checks if parameter is null"],
+                        [1, "does not set club member to parameter", "sets club member to parameter"],
+                        [1, "does not set on loan status to true", "sets on loan status to true"],
+                        [1, "does not increment number of times used", "increments number of times used"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Harness Class: returnHarness",
+            "marks": 5,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "function definition",
+                    "positive_comment": "has correct function definition",
+                    "partial_comment": "has partially correct function definition",
+                    "collection": [
+                        ["method should have no parameters"],
+                        ["method should have void as return type"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "does not check if harness is on loan", "checks if harness is on loan"],
+                        [1, "does not change loan status to false", "changes loan status to false"],
+                        [1, "does not reset club member value to null", "resets club member value to null"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Harness Class: toString",
+            "marks": 3,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 0.5,
+                    "description": "function definition",
+                    "positive_comment": "has correct function definition",
+                    "partial_comment": "has partially correct function definition",
+                    "collection": [
+                        ["method should have no parameter"],
+                        ["method should have String as return type"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [2, "should return string with details of all member variables", "returns string with details of member variables"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: member variables",
+            "marks": 2,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description": "member variables",
+                    "positive_comment": "declares collection of Harnesses as private member variable",
+                    "partial_comment": "does not correctly declare member variables",
+                    "collection": [
+                        ["should declare member variable as collection of Harnesses"],
+                        ["should declare member variable as private"]
+                    ]
+                }
+            ] 
+        },
+        {
+            "title": "HarnessRecords Class: constructor 1",
+            "marks": 1,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "should set member variable to null", "sets member variable to null"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: constructor 2",
+            "marks": 8,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "constructor actions",
+                    "collection": [
+                        [1, "should takes a input stream as a parameter which this can be of several types: In, Scanner, etc.", "takes a input stream as a parameter which this can be of several types: In, Scanner, etc."],
+                        [1, "should check if the stream is not null", "checks if the stream is not null"],
+                        [1, "should read the first value which defines the size of the collection of harnesses", "reads the first value which defines the size of the collection of harnesses"],
+                        [2, "should read other harness characteristics from the stream", "reads other harness characteristics from the stream"],
+                        [2, "should initialise Harness using constructor by passing values read from the stream/text file", "initialises Harness using constructor by passing values read from the stream/text file"],
+                        [1, "should add each Harness object to collection ", "should add each Harness object to collection"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: isEmpty",
+            "marks": 3,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [0.5, "should not have any parameters", "does not have any parameters"],
+                        [0.5, "should have a boolean return type", "has a boolean return type"],
+                        [0.5, "should return true if collection is null", "returns true if collection is null"],
+                        [0.5, "should return false if collection is not null", "returns false if collection is not null"]                            
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: addHarness",
+            "marks": 5,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [0.5, "must take Harness object as parameter", "takes Harness object as parameter"],
+                        [0.5, "should have void return type", "has void return type"],
+                        [4, "should add harness to collection", "adds harness to collection"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: findHarness",
+            "marks": 6,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "description": "function definition",
+                    "marks": 0.5,
+                    "positive_comment": "has correct definition",
+                    "partial_comment": "has partially correct function definition",
+                    "collection": [
+                        ["should have make and model number as parameters"],
+                        ["should return Harness object"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [4, "should check if harness with properties exists by looping through collection", "checks if harness with properties exists in collection"],
+                        [0.5, "should return harness object if it exists", "returns harness object if it exists"],
+                        [0.5, "should return null if harness does not exist", "returns null if harness does not exist"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: checkHarness",
+            "marks": 9,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description":"function definition",
+                    "positive_comment": "has correct parameters and return type",
+                    "partial_comment": "has partially correct parameters and return type",
+                    "collection": [
+                        ["does not have instructor name as parameter"],
+                        ["does not have make as parameter"],
+                        ["does not have model number as parameter"],
+                        ["does not have return type Harness"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [2, "should check if harness with make and model number exists using findHarness", "uses findHarness to find harness with given make and model number"],
+                        [1, "should check if harness is on loan", "checks if harness is on loan"],
+                        [1, "should call checkHarness with instructor name", "calls checkHarness with instructor name"],
+                        [0.5, "should use updated Harness object returned from checkHarness", "uses updated Harness object from checkHarness"],
+                        [0.5, "should return null if harness is not available", "returns null if harness is not available"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: loanHarness",
+            "marks": 7,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [1, "must take a club member name as parameter", "takes club member name as parameter"],
+                        [1, "must have return type Harness", "has return type Harness"],
+                        [2, "should ind available harness by looping through collection", "finds available harness by looping through collection"],
+                        [1, "should call canHarnessBeLoaned", "calls canHarnessBeLoaned"],
+                        [1, "available harness should be loaned using loanHarness", "available harness is loaned using loanHarness"],
+                        [1, "should pass club member as parameter to loanHarness", "passes club member as parameter to loanHarness"],
+                        [0.5, "should return harness object", "returns harness object"],
+                        [0.5, "should return null if harness not available", "returns null if harness not available"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: returnHarness",
+            "marks": 7,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [2, "must take make and model number as parameters", "takes make and model number as parameters"],
+                        [1, "should return type Harness", "return type is Harness"],
+                        [1, "should find harness using findHarness", "finds harness using findHarness"],
+                        [1, "should check if found harness is null", "checks if found harness is null"],
+                        [1, "should check if found harness is on loan", "checks if found harness is on loan"],
+                        [0.5, "should return harness object using returnHarness", "uses returnHarness"],
+                        [0.5, "should return null if no harness is found", "returns null if no harness is found"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "HarnessRecords Class: removeHarness",
+            "marks": 8,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "action steps",
+                    "collection": [
+                        [2, "must take make and model number as parmeters", "takes make and model number as parameters"],
+                        [1, "should return type Harness", "return type is Harness"],
+                        [2, "should check collection using specified properties", "checks collection using specified properties"],
+                        [2, "should remove object (if using ArrayList) or replace array", "correctly replaces object (ArrayList) or array"],
+                        [0.5, "shoud return harness object found", "returns harness object found"],
+                        [0.5, "should return null if harness not found", "returns null if harness not found"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "GUI main line",
+            "marks": 5,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description": "menu",
+                    "positive_comment": "has correct menu options",
+                    "partial_comment": "has only some menu options",
+                    "collection": [
+                        ["missing option add new harness to collection"],
+                        ["missing option remove harness from collection"],
+                        ["missing option check harness by instructor"],
+                        ["missing option loan harness to club member"],
+                        ["missing option return harness with make and model number"]
+                    ]
+                }
+            ]
+        }
+    ]
+}

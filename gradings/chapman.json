@@ -1,0 +1,74 @@
+{
+    "assignment_title": "Chapman",
+    "assignment_marks": 10,
+    "sections": [
+        {
+            "title": "simulations",
+            "marks": 4,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description": "",
+                    "positive_comment": "",
+                    "partial_comment": "",
+                    "collection": [
+                        ["should read user input, call isSolvable and re-display board"],
+                        ["should have UI using JPanel or JOptionPane"],
+                        ["should display board correctly showing numbers and BB cell"],
+                        ["should terminate correctly when board becomes unsolvable or when user decides to quit"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "solvability",
+            "marks": 2,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description": "",
+                    "positive_comment": "",
+                    "partial_comment" : "",
+                    "collection": [
+                        ["should generate a solvable initial configuration"],
+                        ["should check if board is solvable using even_perm and inversion"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "documentation",
+            "marks": 3,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 1,
+                    "description": "",
+                    "positive_comment": "",
+                    "partial_comment": "",
+                    "collection": [
+                        ["example should be given as proof of correctness"],
+                        ["should have clarity and conciseness"],
+                        ["should show code (does not apply to pseudocode)"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "code structure",
+            "marks": 1,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "",
+                    "collection": [
+                        [1, "code should be understandable, have comments, no duplication, separation of concern (logic from UI), methods should be concise (do one task only), good representation of board, good use of constants", ""]
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
