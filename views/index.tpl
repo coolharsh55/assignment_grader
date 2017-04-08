@@ -12,6 +12,7 @@
     </div>
     <div id="CS1010" class="center ma2 pa2 bg-washed-green">
         <h2 class="tc dark-blue">CS1010</h2>
+        <a class="link pv2 db tc" href="/grade/eTest4/">eTest4</a>
         <a class="link pv2 db tc" href="/grade/connect-four/">Connect Four</a>
         <a class="link pv2 db tc" href="/grade/climbing-club/">Climbing Club</a>
         </ul>

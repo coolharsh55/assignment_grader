@@ -1,0 +1,98 @@
+{
+    "assignment_title": "eTest4",
+    "assignment_marks": 100,
+    "sections": [
+        {
+            "title": "BookStoreManager: Instance Variables",
+            "marks": 5,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "Collection (Array or ArrayList) to store objects of type Book",
+                    "collection": [
+                        [5, "Does not have the correct declartaion and type", "Has the correct declaration and type"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "BookStoreManager: Constructor",
+            "marks": 35,
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "",
+                    "collection": [
+                        [2, "Parameter should be In object", "Parameter is of type In"],
+                        [4, "Does not read number of books from file using readInt()", "Reads number of books from file using readInt()"],
+                        [3, "Does not initialise the Book collection", "Initialises the Book collection"],
+                        [5, "Does not create and use a loop using number of books read", "Creates and uses a loop using number of books read"],
+                        [8, "Does not read ISBN, title, Author, and quantity from file within the loop", "Reads all parameters from file within the loop"],
+                        [5, "Does not create Book object using items read from file", "Creates Book object using items read from file"],
+                        [5, "Does not add Book object to collection", "Adds Book object to collection"],
+                        [3, "Does not call In.close() to close stream", "Closes In stream"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "BookStoreManager: printBooks()",
+            "marks": 25,
+            "gradings": [
+                {
+                    "type": "negative-collective",
+                    "marks": 2,
+                    "description": "Declaration",
+                    "positive_comment": "Correct declaration",
+                    "partial_comment": "Partially correct declaration",
+                    "collection": [
+                        ["Should not have parameters"],
+                        ["Should have return type void"]
+                    ]
+                },
+                {
+                    "type": "negative",
+                    "description": "actions",
+                    "collection": [
+                        [3, "Should ensure collection is not null", "Ensures collection is not null"],
+                        [10, "Should loop through the collection", "Loops through the collection"],
+                        [3, "Should print each book details", "Prints each book details"],
+                        [5, "Must use Book.toString() to print string", "Uses Book.toString"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "BookStoreManager: main",
+            "marks": 20,
+            "description": "public static void main",
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "",
+                    "collection": [
+                        [5, "Does not create instance of class In using books.txt as parameter", "Creates In object using books.txt"],
+                        [5, "Does not create instance of BookStoreManager using instance of In class", "Creates BookStoreManager using In object"],
+                        [5, "Does not sort collection", "Sorts the collection"],
+                        [5, "Does not call printBooks", "Calls printBooks"]
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Book: Updates",
+            "marks": 15,
+            "description": "",
+            "gradings": [
+                {
+                    "type": "negative",
+                    "description": "",
+                    "collection": [
+                        [5, "Does not update class to implement comparable interface as comparable<Book>", "Updates class to implement comparable interface"],
+                        [10, "Does not override comapreTo method to compare book quantities by subtracting book quantity in object passed and returns the difference", "Overries compareTo method to compare book quanities by subtracting to get their difference"]
+                    ]
+                }
+            ]
+        }
+    ]
+}
