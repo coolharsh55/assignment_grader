@@ -40,20 +40,11 @@
             "marks": 25,
             "gradings": [
                 {
-                    "type": "negative-collective",
-                    "marks": 2,
-                    "description": "Declaration",
-                    "positive_comment": "Correct declaration",
-                    "partial_comment": "Partially correct declaration",
-                    "collection": [
-                        ["Should not have parameters"],
-                        ["Should have return type void"]
-                    ]
-                },
-                {
                     "type": "negative",
                     "description": "actions",
                     "collection": [
+                        [2, "Should not have parameters", "Does not have parmaeters"],
+                        [2, "Should have return type void", "Has return type void"],
                         [3, "Should ensure collection is not null", "Ensures collection is not null"],
                         [10, "Should loop through the collection", "Loops through the collection"],
                         [3, "Should print each book details", "Prints each book details"],
@@ -89,7 +80,8 @@
                     "description": "",
                     "collection": [
                         [5, "Does not update class to implement comparable interface as comparable<Book>", "Updates class to implement comparable interface"],
-                        [10, "Does not override comapreTo method to compare book quantities by subtracting book quantity in object passed and returns the difference", "Overries compareTo method to compare book quanities by subtracting to get their difference"]
+                        [5, "Does not override comapreTo method", "Overrides compareTo method"],
+                        [5, "Does not compare book quantities by subtracting book quantity in object passed and returns the difference", "Compares book quanities by subtracting to get their difference"]
                     ]
                 }
             ]
