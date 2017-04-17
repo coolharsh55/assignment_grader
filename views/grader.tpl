@@ -153,6 +153,7 @@ var calculate_grades = function() {
     var message = "";
     _.each(gradingData.sections, function(section) {
         var section_marks = section.marks;
+        var section_message = "";
         var section_message_positive = "";
         var section_message_negative = "";
         _.each(section.gradings, function(grading) {
@@ -161,16 +162,16 @@ var calculate_grades = function() {
                 _.each(grading.collection, function(comment) {
                     if (comment.input.is(":checked")) {
                         ticked_items += 1;
-                        section_message_negative += comment[0] + "<br>";
+                        section_message += comment[0] + ". ";
                     }
                 });
                 if (ticked_items == 0) {
                     // ALL POSITIVE -> NO ITEMS WERE TICKED
-                    section_message_positive += grading.positive_comment + "<br>";
+                    section_message += grading.positive_comment + ". ";
                 } else {
                 	if (ticked_items < grading.collection.length) {
                 		// SOME ITEMS WERE TICKED
-                		section_message_positive += grading.partial_comment + "<br>";
+                		section_message += grading.partial_comment + ". ";
                 	}
                 }
                 section_marks = section_marks - grading.marks * ticked_items;
@@ -178,24 +179,21 @@ var calculate_grades = function() {
             	_.each(grading.collection, function(comment) {
             		if (comment.input.is(":checked")) {
             			section_marks -= comment[0];
-            			section_message_negative += comment[1] + "<br>";
+            			section_message += comment[1] + ". ";
             		} else {
-            			section_message_positive += comment[2] + "<br>";
+            			section_message += comment[2] + ". ";
             		}
             	});
             }
             message = [
 	            message,
-	            "<b>" + section.title,
-	            "Marks: " + section_marks + " from " + section.marks + "</b>",
-	            "<div class='dark-green'>" + section_message_positive + "</div><div class='dark-red'>" + section_message_negative + "</div>",
-	            "<br>"
+                "For the " + section.title + ", you were awarded " + section_marks + " out of " + section.marks + ". " + section_message,
+                "<br>"
 	        ].join("<br>");
         });
         total_marks += section_marks;
     });
     $('#message').empty();
-    $('#message').append("Total marks: " + total_marks + "<br>");
     $('#message').append(message);
 };
 
